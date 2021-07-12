@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/fonts/SFProDisplay-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/fonts/SFProDisplay-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Light";
+  font-style: normal;
+  src: url("../assets/fonts/SFProDisplay-Light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Medium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/fonts/SFProDisplay-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}

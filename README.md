@@ -29,3 +29,7 @@ In the project directory, you can run:
 
 1. `npm install`
 2. `npm start`
+
+## :warning: Important warning
+
+As this project was made for a Front-End job position, I used the limited hours to develop the features and don't implemented responsive logic. So use a desktop to build and test application.

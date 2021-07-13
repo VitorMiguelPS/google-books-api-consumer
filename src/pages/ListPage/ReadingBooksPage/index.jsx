@@ -27,7 +27,7 @@ function ReadingBooksPage() {
         )}
       </Grid>
 
-      {allSelectedBooks.length && (
+      {allSelectedBooks.length > 0 && (
         <Grid className={classes.BodyBooksList}>
           {allSelectedBooks.map((item, index) => (
             <Grid

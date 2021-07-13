@@ -42,20 +42,9 @@ function CurrentlyReading() {
                 <Typography className={classes.CurrentlyBookTitle}>
                   {selectedBook?.volumeInfo.title}
                 </Typography>
-                {selectedBook?.volumeInfo.authors.length <= 1 ? (
-                  <Typography className={classes.CurrentlyBookAuthor}>
-                    {selectedBook?.volumeInfo.authors}
-                  </Typography>
-                ) : (
-                  selectedBook?.volumeInfo.authors.map((item, index) => (
-                    <Typography
-                      className={classes.CurrentlyBookAuthor}
-                      key={index}
-                    >
-                      {item}
-                    </Typography>
-                  ))
-                )}
+                <Typography className={classes.CurrentlyBookAuthor}>
+                  by {selectedBook?.volumeInfo.authors.join(", ")}
+                </Typography>
               </Grid>
               <Grid className={classes.CurrentlyBookDescriptionDown}>
                 <Typography className={classes.CurrentlyBookChapter}>

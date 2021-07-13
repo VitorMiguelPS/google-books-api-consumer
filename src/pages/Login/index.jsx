@@ -22,6 +22,8 @@ function Login() {
       for (let i in usersList) {
         if (user === usersList[i].user && password === usersList[i].password) {
           setCurrentlyUser([usersList[i]]);
+          localStorage.setItem("loged-status", usersList[i].loged);
+          localStorage.setItem("user-name", usersList[i].name);
           validUser = true;
           history.push("/");
           break;

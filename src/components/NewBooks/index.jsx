@@ -15,8 +15,12 @@ function NewBooks() {
 
   const [discoverBooks, setDiscoverBooks] = useState([]);
 
-  const { setSelectedBook, setAllSelectedBooks, allSelectedBooks } =
-    useContext(ContextCommon);
+  const {
+    setSelectedBook,
+    setAllSelectedBooks,
+    allSelectedBooks,
+    setSearchTerm,
+  } = useContext(ContextCommon);
 
   const settings = {
     dots: false,
@@ -77,7 +81,11 @@ function NewBooks() {
           Discover new book
         </Typography>
 
-        <Link to="/list" className={classes.MoreDetails}>
+        <Link
+          to="/list"
+          className={classes.MoreDetails}
+          onClick={() => setSearchTerm("javascript")}
+        >
           More
         </Link>
       </Grid>
@@ -107,7 +115,7 @@ function NewBooks() {
                         {item?.volumeInfo.title}
                       </Typography>
                       <Typography className={classes.AuthorName}>
-                        {item?.volumeInfo.authors[0]}
+                        {item?.volumeInfo.authors.join(", ")}
                       </Typography>
                     </Grid>
                     <Grid className={classes.BookDescriptionDown}>

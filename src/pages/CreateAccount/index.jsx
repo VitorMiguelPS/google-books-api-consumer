@@ -39,6 +39,8 @@ function CreateAccount() {
         loged: true,
       };
 
+      localStorage.setItem("loged-status", newUser.loged);
+      localStorage.setItem("user-name", newUser.name);
       setUsersList([...usersList, newUser]);
       setCurrentlyUser([newUser]);
       history.push("/");

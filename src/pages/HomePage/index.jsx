@@ -24,18 +24,24 @@ function HomePage() {
       <MenuBar actPage={"Home"} />
 
       <Grid item className={classes.ProfileSession}>
-        {currentlyUser ? (
+        {currentlyUser || localStorage.getItem("loged-status") ? (
           <>
             <Typography
               className={classes.Logout}
-              onClick={() => setCurrentlyUser(false)}
+              onClick={() => {
+                setCurrentlyUser(false);
+                localStorage.removeItem("loged-status");
+                localStorage.removeItem("user-name");
+              }}
             >
               Logout
             </Typography>
             <img src={WavingHand} alt="Salutation" />
             <Typography>
-              Hi,
-              <em className={classes.NameUser}> {currentlyUser[0].name}</em>
+              {"Hi, "}
+              <em className={classes.NameUser}>
+                {currentlyUser[0]?.name || localStorage.getItem("user-name")}
+              </em>
             </Typography>
           </>
         ) : (

@@ -6,6 +6,8 @@ The main objective of this project is consume "Google Books API". This API let m
 - View information about a book, including metadata, availability and price, links to the preview page.
 - Manage your own bookshelves.
 
+Also, to complement this project I'm using "Youtube API" that gives links to implement youtube videos directly in the project.
+
 ## Before you start
 
 ### Dependencies

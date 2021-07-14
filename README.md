@@ -21,7 +21,7 @@ These are the dependencies used in this project:
 
 ### Environment variables
 
-In this project I'm using one environment variable named "REACT_APP_API_YOUTUBE". Create a file named ".env" with this variable to run project.
+In this project I'm using one environment variable named "REACT_APP_API_YOUTUBE". Create a file named ".env" with this variable to run project. The value of this variable must be generated in [Google Developers Portal](https://cloud.google.com/docs/authentication/api-keys?visit_id=637618613380047962-2768321852&rd=1).
 
 ## Command lines the run project
 
